@@ -223,3 +223,49 @@
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+.classblock{
+  margin-top: 35px;
+  margin-left:210px;
+  height:450px;
+  width:350px;
+  border:solid;
+  border-width:1px;
+  border-color:#6e7c7c;
+  background-color: #6e7c7c;
+  border-radius:15px;
+  
+  -moz-box-shadow: 0 0 15px #508888;
+-webkit-box-shadow: 0 0 15px #508888;
+box-shadow: 0 0 15px #508888;
+
+}
+.subjecthead{
+  margin-left:20px;
+  margin-top:7px;
+  font-size: 30px;
+  color: #2d3941
+}
+.block1{
+  
+}
+.block2{
+  margin-left:230px;
+}
+.block3{
+  margin-left:250px;
+}
+.fa{
+  margin-left:170px;
+  margin-top:10px;
+}
+.extendlink{
+  color:black;
+}
+@media screen and (max-width: 450px) {
+  .classblock{ 
+  margin-left:15px;
+  width:300px;
+  
+}
+}
