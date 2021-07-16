@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+
 <head>
 
     <meta charset="utf-8">
@@ -8,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="TemplateMo">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Dashboard</title>
 <!--
 
@@ -20,7 +22,6 @@ https://templatemo.com/tm-540-lava-landing-page
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
 
@@ -29,7 +30,7 @@ https://templatemo.com/tm-540-lava-landing-page
     <link rel="stylesheet" href="assets/css/owl-carousel.css">
 
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -44,12 +45,13 @@ https://templatemo.com/tm-540-lava-landing-page
 <!-- FONTS -->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 <body>
     <nav class="navbar navbar-expand-sm dashnav" style="background-color:#3d3d3d">
-      <div class="row">
-        <div class="col-md-2">
-
+      <div id="navbar-inner" style="width:100%;">
+        <div class="left-menu">
           <a href="" onclick="openNav()">
             <input type="checkbox" id="menu_checkbox" onclick="openNav()">
             <label for="menu_checkbox">
@@ -58,60 +60,63 @@ https://templatemo.com/tm-540-lava-landing-page
             <div></div>
             </label>
           </a>
-
-
-        </div>
-        <div class="col-md-3">
-
-          <a href="index.html" class="active">
+          <a href="index.html" class="active"style="position:fixed;">
             <p class="logo">myAgenda</p>
           </a>
-
         </div>
-        <div class="col-md"></div>
+        <div class="nav-button-container">
+          <a href="" class="active">
+            <i class="fas fa-plus navButton"></i>
+          </a>
+          
       </div>
+      <div class="nav-pf">
+        <a href="" class="active" id="profileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img class="pfp" src="assets/images/img_avatar.png"/>
+        </a>
+        <div class="dropdown-menu profileDropdown" aria-labelledby="profileDropdown">
+          <a class="dropdown-item" href="#">Settings</a>
+          <a class="dropdown-item" href="#">Edit Profile</a>
+          <a class="dropdown-item" href="#" onclick="logOut()">Log Out</a>
+        </div>
+    </div>
+    
+      </div>
+      
 
 
       
       </nav>
 
       <!-- SideNav -->
-      <div id="mySidenav" class="sidenav" style="width:250px;">
-        <a href="#" >Schedule</a>
-        <a href="#">Grades</a>
-        <a href="#">Classes</a>
-        <a href="#">Extracurriculars</a>
-        <a href="#">College Planning</a>
+      <div id="mySidenav" class="sidenav" style="width:0px;">
+        <div id="contentHolder" class="sideNavContentHolder">
+          <ul id="filters">
+            <li class="filter">
+              <span class="item_icon"><i class="fas fa-inbox"></i></span>
+              <span class="item_content">Inbox</span>
+            </li>
+            <li class="filter">
+              <span class="item_icon"><i class="far fa-list-alt"></i></span>
+              <span class="item_content">Today</span>
+            </li>
+            <li class="filter">
+              <span class="item_icon"><i class="fas fa-calendar-week"></i></span>
+              <span class="item_content">Upcoming</span>
+            </li>
+          </ul>
+        </div>
       </div>
       
       
       <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-      <div id="main" style = "margin-left:150px;">
-
-        <div class="row">
-          <div class="col-md-3">
-            <div class="classblock block1">
-              <h1 class="subjecthead">bilogy <i class="fa fa-caret-down" aria-hidden="true" onclick="extendfunc()"></i></h1>
-              
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="classblock block2">
-              <h1 class="subjecthead">calc</h1>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="classblock block3">
-              <h1 class="subjecthead">biology</h1>
-            </div>
-          </div>
-          <div class="col-md-1"></div>
-        </div>
-
+      <div id="main">
       </div>
 
 
 
 
-      <script src="sidenav.js"></script>
+      <script src="src/js/sidenav.js"></script>
+      <script src="src/js/signin.js"></script>
+      <script src="src/js/dashboard.js"></script>
 </body>
