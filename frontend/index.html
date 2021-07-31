@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" href="http://localhost:4000/static/css/font-awesome.css">
     <link rel="stylesheet" href="http://localhost:4000/static/css/templatemo-lava.css">
     <link rel="stylesheet" href="http://localhost:4000/static/css/owl-carousel.css">
-    <link rel="stylesheet" href="http://localhost:4000/static/css/index.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -37,6 +36,8 @@
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="http://localhost:4000/static/css/index.css">
+
 </head>
 
 <body>
@@ -83,20 +84,20 @@
             <div id="contentHolder" class="sideNavContentHolder">
                 <ul id="filters">
                     <li class="filter">
-                        <a href="/index/inbox"  data-link>s</a>
-                        <span class="item_icon"><i class="fas fa-inbox"></i></span>
-                        <span href="" class="item_content">Inbox</span>
+                        <a id="inboxLink" href="/index/inbox"  data-link>Inbox</a>
+                        <!-- <span class="item_icon"><i class="fas fa-inbox"></i></span>
+                        <span href="" class="item_content">Inbox</span> -->
                     </li>
 
                     <li class="filter">
-                        <a href="/index/today" class="nav__link" data-link>s</a>
-                        <span class="item_icon"><i class="far fa-list-alt"></i></span>
-                        <span class="item_content">Today</span>
+                        <a id="todayLink" href="/index/today"  data-link>Today</a>
+                        <!-- <span class="item_icon"><i class="far fa-list-alt"></i></span>
+                        <span class="item_content">Today</span> -->
                     </li>
                     <li class="filter">
-                        <a href="/index/upcoming" class="nav__link" data-link>s</a>
-                        <span class="item_icon"><i class="fas fa-calendar-week"></i></span>
-                        <span class="item_content">Upcoming</span>
+                        <a id="upcomingLink" href="/index/upcoming"  data-link>Upcoming</a>
+                        <!-- <span class="item_icon"><i class="fas fa-calendar-week"></i></span>
+                        <span class="item_content">Upcoming</span> -->
                     </li>
                 </ul>
             </div>
